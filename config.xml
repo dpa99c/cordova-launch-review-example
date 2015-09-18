@@ -2,11 +2,9 @@
 <widget id="uk.co.workingedge.phonegap.plugins.example.launchreview" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Launch Review Plugin Example</name>
     <description>
-        A sample Apache Cordova application that responds to the deviceready event.
+        This repo contains an example project which illustrates use of the [Launch Review Cordova/Phonegap plugin](https://github.com/dpa99c/cordova-launch-review).
     </description>
-    <author email="dev@cordova.apache.org" href="http://cordova.io">
-        Apache Cordova Team
-    </author>
+    <author>Dave Alden</author>
     <content src="index.html" />
 
     <plugin name="cordova-plugin-whitelist" version="1" />

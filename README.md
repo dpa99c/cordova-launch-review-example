@@ -1,21 +1,20 @@
-Cordova/Phonegap Diagnostic Plugin Example
+Cordova/Phonegap Launch Review Plugin Example
 ==========================================
 
-This repo contains an example project which illustrates use of the [Diagnostic Cordova/Phonegap plugin](https://github.com/dpa99c/cordova-diagnostic-plugin).
+This repo contains an example project which illustrates use of the [Launch Review Cordova/Phonegap plugin](https://github.com/dpa99c/cordova-launch-review).
 
 
 ## Contents
 * [Downloading](#downloading)
 * [Building and running](#building-and-running)
 * [Pre-built app](#pre-built-app)
-* [Screenshots](#screenshots)
 * [License](#license)
  
 # Downloading
 
 To download the example project, clone it using git:
 
-    $ git clone https://github.com/dpa99c/cordova-diagnostic-plugin-example.git
+    $ git clone https://github.com/dpa99c/cordova-launch-review-example.git
 
 # Building and running
 
@@ -29,18 +28,9 @@ For example, to run on the Android platform, execute the following commands from
 # Pre-built app
 If you're unable to build the project or just want to try it out, here is the project as a pre-built app installer:
 
-- [Android (APK)](build/cordova-diagnostic-plugin-example.apk)
-- [iOS (IPA)](build/cordova-diagnostic-plugin-example.ipa)
+- [Android (APK)](build/cordova-launch-review-example.apk)
+- [iOS (IPA)](build/cordova-launch-review-example.ipa)
 
-# Screenshots
-
-## Android
-
-![iOS screenshot](https://raw.githubusercontent.com/dpa99c/cordova-diagnostic-plugin-example/master/screenshots/android_screenshot.png)
-
-## iOS
-
-![Android screenshot](https://raw.githubusercontent.com/dpa99c/cordova-diagnostic-plugin-example/master/screenshots/ios.png)
 
 # License
 ================
