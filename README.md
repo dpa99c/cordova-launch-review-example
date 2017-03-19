@@ -1,17 +1,17 @@
 Cordova/Phonegap Launch Review Plugin Example
-==========================================
+=============================================
 
 This repo contains an example project which illustrates use of the [cordova-launch-review plugin](https://github.com/dpa99c/cordova-launch-review).
 
-The demo app contains a single button, which when clicked, opens the review page for Google Maps in the platform's store app.
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**
 
-Currently the demo app works on the same platforms as the plugin supports: Android and iOS
+- [Downloading](#downloading)
+- [Building and running](#building-and-running)
+- [License](#license)
 
-## Contents
-* [Downloading](#downloading)
-* [Building and running](#building-and-running)
-* [Pre-built app](#pre-built-app)
-* [License](#license)
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
  
 # Downloading
 
@@ -27,12 +27,6 @@ For example, to run on the Android platform, execute the following commands from
 
 - Install the platform into the project: `$ cordova platform add android`
 - Build and run the project: `$ cordova run android`
-
-# Pre-built app
-If you're unable to build the project or just want to try it out, here is the project as a pre-built app installer:
-
-- [Android (APK)](build/cordova-launch-review-example.apk)
-- [iOS (IPA)](build/cordova-launch-review-example.ipa)
 
 
 # License
