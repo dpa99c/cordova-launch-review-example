@@ -2,17 +2,8 @@ var platform, ratingTimerId;
 
 var MAX_DIALOG_WAIT_TIME = 5000; //max time to wait for rating to display
 
-var APP_ID = {
-    "android": "com.google.android.apps.maps",
-    "ios": "585027354",
-    "windows": "9wzdncrdc73c"
-};
-
 function init(){
-    platform = device.platform.toLowerCase();
-    if(platform.match(/win/)){
-        platform = "windows";
-    }
+    platform = navigator.userAgent.match('Android') ? "android" : "ios";
     $('body').addClass(platform);
     $('#launchreview').on("touchstart", launchreview);
     $('#launchrating').on("touchstart", launchrating);
@@ -20,7 +11,7 @@ function init(){
 }
 
 function launchreview(){
-    LaunchReview.launch(APP_ID[platform], function (){
+    LaunchReview.launch(function (){
         alert("Successfully launched review app");
     }, function (err){
         alert("Error launching review app: " + err);
