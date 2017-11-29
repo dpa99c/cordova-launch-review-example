@@ -1,4 +1,6 @@
-var platform;
+var platform, ratingTimerId;
+
+var MAX_DIALOG_WAIT_TIME = 5000; //max time to wait for rating to display
 
 var APP_ID = {
     "android": "com.google.android.apps.maps",
@@ -26,8 +28,16 @@ function launchreview(){
 }
 
 function launchrating(){
-    LaunchReview.rating(function (){
-        alert("Successfully launched rating dialog");
+    LaunchReview.rating(function(status){
+        if(status === "requested"){
+            console.log("Requested rating dialog");
+            ratingTimerId = setTimeout(ratingDialogNotShown, MAX_DIALOG_WAIT_TIME);
+            showPreloader();
+        }else{
+            clearTimeout(ratingTimerId);
+            hidePreloader();
+            alert("Successfully displayed rating dialog");
+        }
     }, function (err){
         alert("Error launching rating dialog: " + err);
     });
@@ -38,6 +48,20 @@ function isRatingSupported(){
     alert("Rating dialog supported: " + (supported ? "YES" : "NO"));
 }
 
+function ratingDialogNotShown(){
+    hidePreloader();
+    var msg = "Rating dialog was not shown (after " + MAX_DIALOG_WAIT_TIME + "ms)";
+    console.warn(msg);
+    alert(msg);
+}
+
+function showPreloader(){
+    $('#preloader').show();
+}
+
+function hidePreloader(){
+    $('#preloader').hide();
+}
 
 
 $(document).on("deviceready", init);
