@@ -24,10 +24,12 @@ function launchrating(){
             console.log("Requested rating dialog");
             ratingTimerId = setTimeout(ratingDialogNotShown, MAX_DIALOG_WAIT_TIME);
             showPreloader();
-        }else{
+        }else if(status === "shown"){
             clearTimeout(ratingTimerId);
             hidePreloader();
-            alert("Successfully displayed rating dialog");
+            alert("Rating dialog displayed");
+        }else if(status === "dismissed"){
+            alert("Rating dialog dismissed");
         }
     }, function (err){
         alert("Error launching rating dialog: " + err);

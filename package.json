@@ -1,0 +1,19 @@
+{
+  "name": "uk.co.workingedge.phonegap.plugins.example.launchreview",
+  "version": "2.0.0",
+  "displayName": "Launch Review Plugin Example",
+  "cordova": {
+    "platforms": [
+      "android"
+    ],
+    "plugins": {
+      "cordova-plugin-whitelist": {},
+      "cordova-launch-review": {}
+    }
+  },
+  "dependencies": {
+    "cordova-android": "latest",
+    "cordova-plugin-whitelist": "1.0.0",
+    "cordova-launch-review": "*"
+  }
+}
