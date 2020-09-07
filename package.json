@@ -4,7 +4,8 @@
   "displayName": "Launch Review Plugin Example",
   "cordova": {
     "platforms": [
-      "android"
+      "android",
+      "ios"
     ],
     "plugins": {
       "cordova-plugin-whitelist": {},
@@ -12,8 +13,11 @@
     }
   },
   "dependencies": {
-    "cordova-android": "latest",
     "cordova-plugin-whitelist": "1.0.0",
     "cordova-launch-review": "*"
+  },
+  "devDependencies": {
+    "cordova-android": "^9.0.0",
+    "cordova-ios": "^6.1.1"
   }
 }
