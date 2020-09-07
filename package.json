@@ -9,7 +9,8 @@
     ],
     "plugins": {
       "cordova-plugin-whitelist": {},
-      "cordova-launch-review": {}
+      "cordova-launch-review": {},
+      "cordova-plugin-dialogs": {}
     }
   },
   "dependencies": {
@@ -18,6 +19,7 @@
   },
   "devDependencies": {
     "cordova-android": "^9.0.0",
-    "cordova-ios": "^6.1.1"
+    "cordova-ios": "^6.1.1",
+    "cordova-plugin-dialogs": "^2.0.2"
   }
 }

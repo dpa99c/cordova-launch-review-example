@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="uk.co.workingedge.phonegap.plugins.example.launchreview" version="2.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="uk.co.workingedge.phonegap.plugins.example.launchreview" version="4.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Launch Review Plugin Example</name>
     <description>
         An example project which illustrates use of the [Launch Review Cordova/Phonegap plugin](https://github.com/dpa99c/cordova-launch-review).
